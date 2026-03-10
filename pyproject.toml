@@ -1,0 +1,16 @@
+[project]
+name = "voice-test"
+version = "0.1.0"
+description = "CLI tool to test real-time conversational AI voice APIs side-by-side"
+requires-python = ">=3.10"
+dependencies = [
+    "websockets>=13.0",
+    "sounddevice>=0.5.0",
+    "numpy>=1.26",
+    "python-dotenv>=1.0",
+    "google-genai>=1.0.0",
+    "hume>=0.7.0",
+]
+
+[project.scripts]
+voice-test = "voice_test.cli:main"
